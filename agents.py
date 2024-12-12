@@ -6,12 +6,11 @@ from collections import namedtuple
 import torch
 import torch.nn as nn
 from torch.optim import Adam
-# from torch.utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 
-from model import DQN
+from model import DQN     
 from envs import SumoEnv, TrafficLight
 from replay_buffers import ReplayBuffer
-
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -28,9 +27,9 @@ class DQNAgent:
         self.controlled_tls = tls    
         self.tls_id = tls.tls_id
         self.steps_done = 0
-        self.batch_size = 128
-        self.target_update = 100
-        self.gamma = 0.95
+        self.batch_size = 64
+        self.target_update = 1000
+        self.gamma = 0.99
 
 
     def select_action(self, state, epsilon: float) -> int:
@@ -126,10 +125,7 @@ class MultiDQNAgent:
         self.env.reset()
         done = False
         while not done:
-            states = self.env.get_observation()
-            actions = [agent.select_action(state, epsilon = 0) for state, agent in zip(states, self.agents)]
-            next_state, rewards, done, info = self.env.step(actions)
-        return info
+            state, rewards, done, info = self.play_step()
 
 
 
