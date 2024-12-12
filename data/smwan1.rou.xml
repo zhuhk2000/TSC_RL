@@ -1,0 +1,34 @@
+
+<routes>
+    <!-- 定义车辆类型 -->
+    <vType id="type1" vClass = "passenger" accei = "2.6" decel = "4.5" departLane="best"
+     length = "5" departSpeed = "max" maxSpeed="20"/>
+    <!-- 定义 flow -->
+    <flow id="flow1" color="1,1,0"  begin="0" end= "3600" probability="0.0833" type='type1' from="E5" to="E4"/>
+    <flow id="flow2" color="1,1,0"  begin="0" end="3600" probability="0.0278" type="type1" from="E5" to="E3"/>
+    <flow id="flow3" color="1,1,0"  begin="0" end= "3600" probability="0.1667" type="type1" from="E5"  to="E7" />
+    <flow id="flow4" color="1,1,0"  begin="0" end= "3600" probability="0.0278" type="type1" from="E5"  to="E15" />
+    <flow id="flow5" color="1,1,0"  begin="0" end= "3600" probability="0.0278" type="type1" from="E5"  to="E19" />
+    <flow id="flow6" color="1,1,0"  begin="0" end= "3600" probability="0.0625" type="type1" from="E2"  to="-E5" />
+    <flow id="flow7" color="1,1,0"  begin="0" end= "3600" probability="0.0083" type="type1" from="E2"  to="E7" />
+    <flow id="flow8" color="1,1,0"  begin="0" end= "3600" probability="0.0027" type="type1" from="E2"  to="E15" />
+    <flow id="flow9" color="1,1,0"  begin="0" end= "3600" probability="0.0027" type="type1" from="E2"  to="E19" />
+    <flow id="flow10" color="1,1,0"  begin="0" end= "3600" probability="0.0069" type="type1" from="E2"  to="E3" />
+    <flow id="flow11" color="1,1,0"  begin="0" end= "3600" probability="0.0347" type="type1" from="-E3"  to="-E5" />
+    <flow id="flow12" color="1,1,0"  begin="0" end= "3600" probability="0.0041" type="type1" from="-E3"  to="E4" />
+    <flow id="flow13" color="1,1,0"  begin="0" end= "3600" probability="0.0013" type="type1" from="-E3"  to="E7" />
+    <flow id="flow14" color="1,1,0"  begin="0" end= "3600" probability="0.0013" type="type1" from="-E3"  to="E15" />
+    <flow id="flow15" color="1,1,0"  begin="0" end= "3600" probability="0.0013" type="type1" from="-E3"  to="E19" />
+    <flow id="flow16" color="1,1,0"  begin="0" end= "3600" probability="0.0083" type="type1" from="-E15"  to="E7" />
+    <flow id="flow17" color="1,1,0"  begin="0" end= "3600" probability="0.0056" type="type1" from="-E15"  to="E19" />
+    <flow id="flow18" color="1,1,0"  begin="0" end= "3600" probability="0.0139" type="type1" from="-E15"  to="-E5" />
+    <flow id="flow19" color="1,1,0"  begin="0" end= "3600" probability="0.0139" type="type1" from="-E19"  to="E7" />
+    <flow id="flow20" color="1,1,0"  begin="0" end= "3600" probability="0.0278" type="type1" from="-E19"  to="-E5" />
+    <flow id="flow21" color="1,1,0"  begin="0" end= "3600" probability="0.0056" type="type1" from="-E19"  to="E3" />
+    <flow id="flow22" color="1,1,0"  begin="0" end= "3600" probability="0.0056" type="type1" from="-E19"  to="E4" />
+    <flow id="flow23" color="1,1,0"  begin="0" end= "3600" probability="0.0278" type="type1" from="-E7"  to="E19" />
+    <flow id="flow24" color="1,1,0"  begin="0" end= "3600" probability="0.0066" type="type1" from="-E7"  to="E15" />
+    <flow id="flow25" color="1,1,0"  begin="0" end= "3600" probability="0.1667" type="type1" from="-E7"  to="-E5" />
+    <flow id="flow26" color="1,1,0"  begin="0" end= "3600" probability="0.0278" type="type1" from="-E7"  to="E3" />
+    <flow id="flow27" color="1,1,0"  begin="0" end= "3600" probability="0.0278" type="type1" from="-E7"  to="E4" />
+</routes>
