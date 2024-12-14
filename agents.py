@@ -6,11 +6,12 @@ from collections import namedtuple
 import torch
 import torch.nn as nn
 from torch.optim import Adam
-from torch.utils.tensorboard import SummaryWriter
+# from torch.utils.tensorboard import SummaryWriter
 
-from model import DQN     
+from model import DQN
 from envs import SumoEnv, TrafficLight
 from replay_buffers import ReplayBuffer
+
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -27,8 +28,8 @@ class DQNAgent:
         self.controlled_tls = tls    
         self.tls_id = tls.tls_id
         self.steps_done = 0
-        self.batch_size = 64
-        self.target_update = 1000
+        self.batch_size = 128
+        self.target_update = 200
         self.gamma = 0.99
 
 
@@ -74,7 +75,7 @@ class DQNAgent:
         import os
         if not os.path.exists(f"models/{time.strftime('%m-%d-%H-%M')}"):
             os.makedirs(f"models/{time.strftime('%m-%d-%H-%M')}")
-        file_name = f"models/{time.strftime('%m-%d-%H-%M')}/{self.tls_id}_model.path"
+        file_name = f"models/{time.strftime('%m-%d-%H-%M')}/{self.tls_id}_model.pkl"
         torch.save(self.net, file_name)
 
     def load_model(self, file_path):
@@ -107,7 +108,7 @@ class MultiDQNAgent:
 
     def load_model(self, dir_path):
         for agent in self.agents:
-            file_name = f"{agent.tls_id}_model.path"
+            file_name = f"{agent.tls_id}_model.pkl"
             agent.load_model(os.path.join(dir_path, file_name))
     
     def play_step(self):
@@ -116,7 +117,7 @@ class MultiDQNAgent:
         actions = [agent.select_action(state, self.epsilon) for state, agent in zip(states, self.agents)]
         next_states, rewards, done, info = self.env.step(actions)
         for i in range(len(states)):
-            self.replay_buffers[i].add(states[i], next_states[i], rewards[i], actions[i], done)
+            self.replay_buffers[i].add(states[i], actions[i], next_states[i], rewards[i], done)
         self.train()
 
         return next_states, rewards, done, info
@@ -125,7 +126,10 @@ class MultiDQNAgent:
         self.env.reset()
         done = False
         while not done:
-            state, rewards, done, info = self.play_step()
+            states = self.env.get_observation()
+            actions = [agent.select_action(state, epsilon = 0) for state, agent in zip(states, self.agents)]
+            next_state, rewards, done, info = self.env.step(actions)
+        return info
 
 
 

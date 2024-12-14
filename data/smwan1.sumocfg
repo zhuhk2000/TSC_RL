@@ -8,14 +8,6 @@
         <end value="3600" />
     </time>
     <output>
-        <tripinfo-output value="output/tripinfo.xml"/>
-        <summary-output value="output/summary_rl.xml"/>
-
-
+        <fcd-output value="shimeiwan.output.xml" />
     </output>
-
-    <gui_only>
-        <start value='t'/>
-        <quit-on-end value='true'/>
-    </gui_only>
 </configuration>
