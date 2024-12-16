@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-12-12 22:24:11 by Eclipse SUMO netedit Version 1.20.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="E:\sumo_project\TSC_RL\data\smwan1.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="E:\sumo_project\TSC_RL\data\smwan1.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="0.00,0.00" convBoundary="-286.30,-613.61,785.60,443.83" origBoundary="-10000000000.00,-10000000000.00,10000000000.00,10000000000.00" projParameter="!"/>
+
+    <edge id=":J2_0" function="internal">
+        <lane id=":J2_0_0" index="0" speed="7.49" length="10.92" shape="-137.64,175.88 -139.96,174.35 -142.38,173.87 -144.90,174.46 -147.51,176.11"/>
+    </edge>
+    <edge id=":J2_1" function="internal">
+        <lane id=":J2_1_0" index="0" speed="13.89" length="24.68" shape="-137.64,175.88 -141.45,172.25 -146.47,167.26 -151.43,162.21 -155.06,158.40"/>
+    </edge>
+    <edge id=":J2_2" function="internal">
+        <lane id=":J2_2_0" index="0" speed="8.51" length="17.43" shape="-137.64,175.88 -141.25,171.80 -142.81,167.96 -142.31,164.37 -139.76,161.02"/>
+    </edge>
+    <edge id=":J2_3" function="internal">
+        <lane id=":J2_3_0" index="0" speed="6.30" length="9.04" shape="-135.48,165.77 -137.09,167.70 -137.62,169.64 -137.09,171.57 -135.49,173.51"/>
+    </edge>
+    <edge id=":J2_4" function="internal">
+        <lane id=":J2_4_0" index="0" speed="13.89" length="15.78" shape="-135.48,165.77 -147.51,176.11"/>
+        <lane id=":J2_4_1" index="1" speed="13.89" length="15.78" shape="-137.62,163.40 -149.53,173.63"/>
+    </edge>
+    <edge id=":J2_6" function="internal">
+        <lane id=":J2_6_0" index="0" speed="9.51" length="20.31" shape="-137.62,163.40 -141.34,165.45 -145.49,165.31 -150.06,162.96 -155.06,158.40"/>
+    </edge>
+    <edge id=":J2_7" function="internal">
+        <lane id=":J2_7_0" index="0" speed="6.38" length="9.04" shape="-155.61,166.20 -153.92,164.36 -153.27,162.45 -153.65,160.46 -155.06,158.40"/>
+    </edge>
+    <edge id=":J2_8" function="internal">
+        <lane id=":J2_8_0" index="0" speed="13.89" length="15.84" shape="-155.61,166.20 -151.73,163.67 -148.67,162.53 -145.65,161.34 -141.91,158.64"/>
+        <lane id=":J2_8_1" index="1" speed="13.89" length="15.84" shape="-153.59,168.68 -149.67,166.11 -146.58,164.96 -143.54,163.74 -139.76,161.02"/>
+    </edge>
+    <edge id=":J2_10" function="internal">
+        <lane id=":J2_10_0" index="0" speed="9.45" length="17.90" shape="-151.56,171.15 -147.90,169.13 -144.00,168.85 -139.86,170.31 -135.49,173.51"/>
+    </edge>
+    <edge id=":J5_0" function="internal">
+        <lane id=":J5_0_0" index="0" speed="13.89" length="11.20" shape="79.39,-28.66 77.09,-26.19 75.50,-24.53 73.84,-22.93 71.35,-20.67"/>
+        <lane id=":J5_0_1" index="1" speed="13.89" length="11.20" shape="77.04,-30.84 74.81,-28.43 73.25,-26.81 71.63,-25.25 69.20,-23.04"/>
+    </edge>
+    <edge id=":J5_2" function="internal">
+        <lane id=":J5_2_0" index="0" speed="6.67" length="8.68" shape="64.56,-34.76 66.70,-33.58 68.71,-33.26 70.59,-33.79 72.35,-35.19"/>
+    </edge>
+    <edge id=":J5_3" function="internal">
+        <lane id=":J5_3_0" index="0" speed="7.59" length="14.66" shape="64.56,-34.76 68.51,-31.36 70.59,-28.27 70.83,-25.50 69.20,-23.04"/>
+    </edge>
+    <edge id=":J5_4" function="internal">
+        <lane id=":J5_4_0" index="0" speed="13.89" length="10.63" shape="64.92,-27.80 67.22,-29.89 68.76,-31.37 70.23,-32.91 72.35,-35.19"/>
+        <lane id=":J5_4_1" index="1" speed="13.89" length="10.63" shape="67.06,-25.42 69.43,-27.57 71.00,-29.09 72.52,-30.67 74.69,-33.01"/>
+    </edge>
+    <edge id=":J7_0" function="internal">
+        <lane id=":J7_0_0" index="0" speed="7.11" length="9.90" shape="289.30,-246.92 287.10,-248.00 284.90,-248.09 282.70,-247.21 280.51,-245.34"/>
+    </edge>
+    <edge id=":J7_1" function="internal">
+        <lane id=":J7_1_0" index="0" speed="13.89" length="20.69" shape="289.30,-246.92 285.57,-249.68 281.06,-253.18 276.61,-256.74 273.04,-259.71"/>
+    </edge>
+    <edge id=":J7_2" function="internal">
+        <lane id=":J7_2_0" index="0" speed="8.15" length="16.65" shape="289.30,-246.92 285.47,-250.38 283.72,-253.82 284.04,-257.26 286.44,-260.68"/>
+    </edge>
+    <edge id=":J7_3" function="internal">
+        <lane id=":J7_3_0" index="0" speed="6.69" length="10.85" shape="288.70,-258.41 287.28,-256.30 287.22,-254.11 288.51,-251.85 291.15,-249.53"/>
+    </edge>
+    <edge id=":J7_4" function="internal">
+        <lane id=":J7_4_0" index="0" speed="13.89" length="15.32" shape="288.70,-258.41 286.66,-255.68 285.24,-252.67 283.51,-249.27 280.51,-245.34"/>
+        <lane id=":J7_4_1" index="1" speed="13.89" length="15.32" shape="288.70,-258.41 278.17,-247.52"/>
+    </edge>
+    <edge id=":J7_6" function="internal">
+        <lane id=":J7_6_0" index="0" speed="9.09" length="17.56" shape="288.70,-258.41 285.25,-256.04 281.50,-255.47 277.43,-256.69 273.04,-259.71"/>
+    </edge>
+    <edge id=":J7_7" function="internal">
+        <lane id=":J7_7_0" index="0" speed="7.81" length="12.69" shape="275.14,-262.14 278.41,-259.83 281.38,-258.82 284.06,-259.10 286.44,-260.68"/>
+    </edge>
+    <edge id=":J7_8" function="internal">
+        <lane id=":J7_8_0" index="0" speed="13.89" length="20.39" shape="275.14,-262.14 278.66,-259.20 283.04,-255.69 287.46,-252.26 291.15,-249.53"/>
+    </edge>
+    <edge id=":J7_9" function="internal">
+        <lane id=":J7_9_0" index="0" speed="8.61" length="17.05" shape="275.14,-262.14 278.78,-258.24 280.50,-254.50 280.30,-250.93 278.17,-247.52"/>
+    </edge>
+    <edge id=":J7_10" function="internal">
+        <lane id=":J7_10_0" index="0" speed="6.43" length="9.03" shape="273.48,-251.87 274.89,-253.91 275.29,-255.90 274.68,-257.84 273.04,-259.71"/>
+    </edge>
+    <edge id=":J7_11" function="internal">
+        <lane id=":J7_11_0" index="0" speed="13.89" length="15.76" shape="273.48,-251.87 277.25,-255.17 280.63,-257.11 283.67,-258.62 286.44,-260.68"/>
+    </edge>
+    <edge id=":J7_12" function="internal">
+        <lane id=":J7_12_0" index="0" speed="9.14" length="16.97" shape="275.82,-249.69 279.03,-252.11 282.66,-252.89 286.70,-252.03 291.15,-249.53"/>
+    </edge>
+
+    <edge id="-E0" from="J5" to="J2" priority="-1">
+        <lane id="-E0_0" index="0" speed="13.89" length="278.45" shape="71.35,-20.67 -135.48,165.77"/>
+        <lane id="-E0_1" index="1" speed="13.89" length="278.45" shape="69.20,-23.04 -137.62,163.40"/>
+    </edge>
+    <edge id="-E1" from="J7" to="J5" priority="-1">
+        <lane id="-E1_0" index="0" speed="13.89" length="295.64" shape="280.51,-245.34 79.39,-28.66"/>
+        <lane id="-E1_1" index="1" speed="13.89" length="295.64" shape="278.17,-247.52 77.04,-30.84"/>
+    </edge>
+    <edge id="-E15" from="J8" to="J7" priority="-1">
+        <lane id="-E15_0" index="0" speed="13.89" length="412.45" shape="-37.00,-531.74 275.14,-262.14"/>
+    </edge>
+    <edge id="-E19" from="J9" to="J7" priority="-1" shape="642.97,-613.61 282.05,-254.05">
+        <lane id="-E19_0" index="0" speed="13.89" length="500.91" shape="643.56,-611.94 288.70,-258.41"/>
+    </edge>
+    <edge id="-E3" from="J4" to="J2" priority="-1" shape="772.31,141.82 243.61,437.94 191.33,443.83 131.29,417.71 -144.53,167.47">
+        <lane id="-E3_0" index="0" speed="13.89" length="1087.76" shape="773.09,143.22 244.11,439.49 191.08,445.47 130.41,419.07 -137.64,175.88"/>
+    </edge>
+    <edge id="-E5" from="J2" to="J1" priority="-1">
+        <lane id="-E5_0" index="0" speed="13.89" length="175.40" shape="-147.51,176.11 -283.26,287.18"/>
+        <lane id="-E5_1" index="1" speed="13.89" length="175.40" shape="-149.53,173.63 -285.29,284.70"/>
+    </edge>
+    <edge id="-E7" from="J10" to="J7" priority="-1" shape="785.60,-98.01 652.47,-188.38 434.94,-145.05 282.05,-254.05">
+        <lane id="-E7_0" index="0" speed="13.89" length="560.48" shape="784.70,-96.69 652.13,-186.68 434.57,-143.35 289.30,-246.92"/>
+    </edge>
+    <edge id="E0" from="J2" to="J5" priority="-1">
+        <lane id="E0_0" index="0" speed="13.89" length="278.45" shape="-141.91,158.64 64.92,-27.80"/>
+        <lane id="E0_1" index="1" speed="13.89" length="278.45" shape="-139.76,161.02 67.06,-25.42"/>
+    </edge>
+    <edge id="E1" from="J5" to="J7" priority="-1">
+        <lane id="E1_0" index="0" speed="13.89" length="295.64" shape="72.35,-35.19 273.48,-251.87"/>
+        <lane id="E1_1" index="1" speed="13.89" length="295.64" shape="74.69,-33.01 275.82,-249.69"/>
+    </edge>
+    <edge id="E15" from="J7" to="J8" priority="-1">
+        <lane id="E15_0" index="0" speed="13.89" length="412.45" shape="273.04,-259.71 -39.10,-529.32"/>
+    </edge>
+    <edge id="E19" from="J7" to="J9" priority="-1" shape="282.05,-254.05 642.97,-613.61">
+        <lane id="E19_0" index="0" speed="13.89" length="500.91" shape="286.44,-260.68 641.30,-614.21"/>
+    </edge>
+    <edge id="E2" from="J6" to="J5" priority="-1">
+        <lane id="E2_0" index="0" speed="13.89" length="60.51" shape="15.69,-70.44 64.56,-34.76"/>
+    </edge>
+    <edge id="E3" from="J2" to="J4" priority="-1" shape="-144.53,167.47 131.29,417.71 191.33,443.83 243.61,437.94 772.31,141.82">
+        <lane id="E3_0" index="0" speed="13.89" length="1083.70" shape="-135.49,173.51 132.17,416.35 191.58,442.19 243.11,436.39 771.53,140.42"/>
+    </edge>
+    <edge id="E4" from="J2" to="J3" priority="-1">
+        <lane id="E4_0" index="0" speed="13.89" length="61.38" shape="-155.06,158.40 -196.67,113.27"/>
+    </edge>
+    <edge id="E5" from="J1" to="J2" priority="-1">
+        <lane id="E5_0" index="0" speed="13.89" length="175.40" shape="-291.37,277.27 -155.61,166.20"/>
+        <lane id="E5_1" index="1" speed="13.89" length="175.40" shape="-289.34,279.74 -153.59,168.68"/>
+        <lane id="E5_2" index="2" speed="13.89" length="175.40" shape="-287.31,282.22 -151.56,171.15"/>
+    </edge>
+    <edge id="E7" from="J7" to="J10" priority="-1" shape="282.05,-254.05 434.94,-145.05 652.47,-188.38 785.60,-98.01">
+        <lane id="E7_0" index="0" speed="13.89" length="560.39" shape="291.15,-249.53 435.31,-146.75 652.81,-190.08 786.50,-99.33"/>
+    </edge>
+
+    <tlLogic id="J2" type="static" programID="0" offset="0">
+        <phase duration="38" state="GrrGGGrGGGr"/>
+        <phase duration="3"  state="rrryyygyyyg"/>
+        <phase duration="38" state="GrrGGGGGrrr"/>
+        <phase duration="3"  state="rrrrrryrrry"/>
+        <phase duration="38" state="GrrGrrrGGGG"/>
+        <phase duration="3"  state="yyyGrrrrrrr"/>
+        <phase duration="38" state="GGGGrrrGrrr"/>
+        <phase duration="6"  state="rrrrrrrrrrr"/>
+        <phase duration="38" state="GrrGrrGGrrG"/>
+    </tlLogic>
+    <tlLogic id="J5" type="static" programID="0" offset="0">
+        <phase duration="42" state="GGGrGG"/>
+        <phase duration="3"  state="yyrryy"/>
+        <phase duration="42" state="GrGGrr"/>
+        <phase duration="3"  state="rryyrr"/>
+    </tlLogic>
+    <tlLogic id="J7" type="static" programID="0" offset="0">
+        <phase duration="38" state="GrrGGGrGrrGGr"/>
+        <phase duration="3"  state="rrryyygrrryyg"/>
+        <phase duration="6"  state="GrrGrrGGrrGrG"/>
+        <phase duration="3"  state="rrrrrryrrrrry"/>
+        <phase duration="37" state="GrrGGGGGrrGrr"/>
+        <phase duration="3"  state="yyyrrrryyyrrr"/>
+        <phase duration="2"  state="GrrGrrrGrrGGG"/>
+        <phase duration="2"  state="rrrrrrrrrrrrr"/>
+        <phase duration="2"  state="GrrGrrrGGGGrr"/>
+        <phase duration="2"  state="rrrrrrrrrrrrr"/>
+        <phase duration="2"  state="GGGGrrrGrrGrr"/>
+        <phase duration="2"  state="rrrrrrrrrrrrr"/>
+        <phase duration="2"  state="GGrGrrrGGrGrr"/>
+        <phase duration="2"  state="rrrrrrrrrrrrr"/>
+        <phase duration="2"  state="GrGGrrrGrGGrr"/>
+    </tlLogic>
+
+    <junction id="J1" type="dead_end" x="-286.30" y="283.46" incLanes="-E5_0 -E5_1" intLanes="" shape="-286.30,283.46 -282.25,288.41 -286.30,283.46"/>
+    <junction id="J10" type="dead_end" x="785.60" y="-98.01" incLanes="E7_0" intLanes="" shape="785.60,-98.01 787.40,-100.66 785.60,-98.01"/>
+    <junction id="J2" type="traffic_light" x="-144.53" y="167.47" incLanes="-E3_0 -E0_0 -E0_1 E5_0 E5_1 E5_2" intLanes=":J2_0_0 :J2_1_0 :J2_2_0 :J2_3_0 :J2_4_0 :J2_4_1 :J2_6_0 :J2_7_0 :J2_8_0 :J2_8_1 :J2_10_0" shape="-138.72,177.07 -134.41,172.33 -135.73,170.54 -135.89,169.64 -135.73,168.75 -135.23,167.85 -134.41,166.96 -142.98,157.45 -144.92,158.92 -146.81,159.80 -148.65,160.08 -150.44,159.75 -152.19,158.84 -153.89,157.32 -156.24,159.49 -155.08,161.40 -154.98,162.33 -155.21,163.23 -155.75,164.11 -156.63,164.96 -146.49,177.35 -143.74,175.77 -142.42,175.54 -141.15,175.68 -139.91,176.19">
+        <request index="0"  response="00000110000" foes="00000110000" cont="0"/>
+        <request index="1"  response="11111110000" foes="11111110000" cont="0"/>
+        <request index="2"  response="11101110000" foes="11101110000" cont="0"/>
+        <request index="3"  response="00000000000" foes="10000000000" cont="0"/>
+        <request index="4"  response="00000000000" foes="10000000111" cont="0"/>
+        <request index="5"  response="00000000000" foes="10000000111" cont="0"/>
+        <request index="6"  response="01110000000" foes="01110000110" cont="0"/>
+        <request index="7"  response="00000000000" foes="00001000010" cont="0"/>
+        <request index="8"  response="00000000000" foes="00001000110" cont="0"/>
+        <request index="9"  response="00000000000" foes="00001000110" cont="0"/>
+        <request index="10" response="00000111000" foes="00000111110" cont="0"/>
+    </junction>
+    <junction id="J3" type="dead_end" x="-195.49" y="112.19" incLanes="E4_0" intLanes="" shape="-197.84,114.36 -195.49,112.19"/>
+    <junction id="J4" type="dead_end" x="772.31" y="141.82" incLanes="E3_0" intLanes="" shape="772.31,141.82 770.75,139.03 772.31,141.82"/>
+    <junction id="J5" type="traffic_light" x="71.77" y="-27.51" incLanes="-E1_0 -E1_1 E2_0 E0_0 E0_1" intLanes=":J5_0_0 :J5_0_1 :J5_2_0 :J5_3_0 :J5_4_0 :J5_4_1" shape="80.56,-27.57 71.18,-36.28 69.47,-35.09 68.55,-34.92 67.58,-35.02 66.57,-35.39 65.50,-36.05 63.62,-33.46 64.92,-32.03 65.11,-31.30 65.00,-30.54 64.58,-29.77 63.85,-28.99 72.42,-19.48 74.23,-21.12 75.56,-22.35 76.62,-23.39 77.66,-24.46 78.90,-25.78">
+        <request index="0" response="000000" foes="001000" cont="0"/>
+        <request index="1" response="000000" foes="001000" cont="0"/>
+        <request index="2" response="110000" foes="110000" cont="0"/>
+        <request index="3" response="110011" foes="110011" cont="0"/>
+        <request index="4" response="000000" foes="001100" cont="0"/>
+        <request index="5" response="000000" foes="001100" cont="0"/>
+    </junction>
+    <junction id="J6" type="dead_end" x="14.75" y="-69.15" incLanes="" intLanes="" shape="14.75,-69.15 16.64,-71.73"/>
+    <junction id="J7" type="traffic_light" x="282.05" y="-254.05" incLanes="-E7_0 -E19_0 -E15_0 E1_0 E1_1" intLanes=":J7_0_0 :J7_1_0 :J7_2_0 :J7_3_0 :J7_4_0 :J7_4_1 :J7_6_0 :J7_7_0 :J7_8_0 :J7_9_0 :J7_10_0 :J7_11_0 :J7_12_0" shape="288.37,-245.62 292.08,-250.83 289.57,-253.16 288.97,-254.26 288.82,-255.31 289.10,-256.32 289.83,-257.28 285.31,-261.81 282.78,-260.47 281.32,-260.50 279.73,-260.98 278.02,-261.93 276.18,-263.35 272.00,-258.50 273.38,-256.73 273.59,-255.81 273.48,-254.88 273.05,-253.93 272.30,-252.96 281.69,-244.25 283.95,-246.04 285.07,-246.44 286.18,-246.50 287.28,-246.22">
+        <request index="0"  response="0000000110000" foes="0000000110000" cont="0"/>
+        <request index="1"  response="1110001110000" foes="1111001110000" cont="0"/>
+        <request index="2"  response="1100111110000" foes="1100111110000" cont="0"/>
+        <request index="3"  response="0000000000000" foes="1000100000000" cont="0"/>
+        <request index="4"  response="0000000000000" foes="1001100000111" cont="0"/>
+        <request index="5"  response="0000000000000" foes="1001100000111" cont="0"/>
+        <request index="6"  response="0110000000000" foes="0111100000110" cont="0"/>
+        <request index="7"  response="0100000000000" foes="0100000000100" cont="0"/>
+        <request index="8"  response="1100001111000" foes="1100001111100" cont="0"/>
+        <request index="9"  response="1100001110010" foes="1100001110010" cont="0"/>
+        <request index="10" response="0000000000000" foes="0000001000010" cont="0"/>
+        <request index="11" response="0000000000000" foes="0001111000110" cont="0"/>
+        <request index="12" response="0000000111000" foes="0001100111110" cont="0"/>
+    </junction>
+    <junction id="J8" type="dead_end" x="-38.05" y="-530.53" incLanes="E15_0" intLanes="" shape="-38.05,-530.53 -40.14,-528.11 -38.05,-530.53"/>
+    <junction id="J9" type="dead_end" x="641.90" y="-613.61" incLanes="E19_0" intLanes="" shape="642.43,-613.08 640.17,-615.34 642.43,-613.08"/>
+
+    <connection from="-E0" to="E3" fromLane="0" toLane="0" via=":J2_3_0" tl="J2" linkIndex="3" dir="r" state="O"/>
+    <connection from="-E0" to="-E5" fromLane="0" toLane="0" via=":J2_4_0" tl="J2" linkIndex="4" dir="s" state="O"/>
+    <connection from="-E0" to="-E5" fromLane="1" toLane="1" via=":J2_4_1" tl="J2" linkIndex="5" dir="s" state="O"/>
+    <connection from="-E0" to="E4" fromLane="1" toLane="0" via=":J2_6_0" tl="J2" linkIndex="6" dir="l" state="o"/>
+    <connection from="-E1" to="-E0" fromLane="0" toLane="0" via=":J5_0_0" tl="J5" linkIndex="0" dir="s" state="O"/>
+    <connection from="-E1" to="-E0" fromLane="1" toLane="1" via=":J5_0_1" tl="J5" linkIndex="1" dir="s" state="O"/>
+    <connection from="-E15" to="E19" fromLane="0" toLane="0" via=":J7_7_0" tl="J7" linkIndex="7" dir="r" state="o"/>
+    <connection from="-E15" to="E7" fromLane="0" toLane="0" via=":J7_8_0" tl="J7" linkIndex="8" dir="s" state="o"/>
+    <connection from="-E15" to="-E1" fromLane="0" toLane="1" via=":J7_9_0" tl="J7" linkIndex="9" dir="l" state="o"/>
+    <connection from="-E19" to="E7" fromLane="0" toLane="0" via=":J7_3_0" tl="J7" linkIndex="3" dir="r" state="O"/>
+    <connection from="-E19" to="-E1" fromLane="0" toLane="0" via=":J7_4_0" tl="J7" linkIndex="4" dir="s" state="O"/>
+    <connection from="-E19" to="-E1" fromLane="0" toLane="1" via=":J7_4_1" tl="J7" linkIndex="5" dir="s" state="O"/>
+    <connection from="-E19" to="E15" fromLane="0" toLane="0" via=":J7_6_0" tl="J7" linkIndex="6" dir="l" state="o"/>
+    <connection from="-E3" to="-E5" fromLane="0" toLane="0" via=":J2_0_0" tl="J2" linkIndex="0" dir="r" state="o"/>
+    <connection from="-E3" to="E4" fromLane="0" toLane="0" via=":J2_1_0" tl="J2" linkIndex="1" dir="s" state="o"/>
+    <connection from="-E3" to="E0" fromLane="0" toLane="1" via=":J2_2_0" tl="J2" linkIndex="2" dir="l" state="o"/>
+    <connection from="-E7" to="-E1" fromLane="0" toLane="0" via=":J7_0_0" tl="J7" linkIndex="0" dir="r" state="o"/>
+    <connection from="-E7" to="E15" fromLane="0" toLane="0" via=":J7_1_0" tl="J7" linkIndex="1" dir="s" state="o"/>
+    <connection from="-E7" to="E19" fromLane="0" toLane="0" via=":J7_2_0" tl="J7" linkIndex="2" dir="l" state="o"/>
+    <connection from="E0" to="E1" fromLane="0" toLane="0" via=":J5_4_0" tl="J5" linkIndex="4" dir="s" state="O"/>
+    <connection from="E0" to="E1" fromLane="1" toLane="1" via=":J5_4_1" tl="J5" linkIndex="5" dir="s" state="O"/>
+    <connection from="E1" to="E15" fromLane="0" toLane="0" via=":J7_10_0" tl="J7" linkIndex="10" dir="r" state="O"/>
+    <connection from="E1" to="E19" fromLane="0" toLane="0" via=":J7_11_0" tl="J7" linkIndex="11" dir="s" state="O"/>
+    <connection from="E1" to="E7" fromLane="1" toLane="0" via=":J7_12_0" tl="J7" linkIndex="12" dir="l" state="o"/>
+    <connection from="E2" to="E1" fromLane="0" toLane="0" via=":J5_2_0" tl="J5" linkIndex="2" dir="r" state="o"/>
+    <connection from="E2" to="-E0" fromLane="0" toLane="1" via=":J5_3_0" tl="J5" linkIndex="3" dir="l" state="o"/>
+    <connection from="E5" to="E4" fromLane="0" toLane="0" via=":J2_7_0" tl="J2" linkIndex="7" dir="r" state="O"/>
+    <connection from="E5" to="E0" fromLane="0" toLane="0" via=":J2_8_0" tl="J2" linkIndex="8" dir="s" state="O"/>
+    <connection from="E5" to="E0" fromLane="1" toLane="1" via=":J2_8_1" tl="J2" linkIndex="9" dir="s" state="O"/>
+    <connection from="E5" to="E3" fromLane="2" toLane="0" via=":J2_10_0" tl="J2" linkIndex="10" dir="l" state="o"/>
+
+    <connection from=":J2_0" to="-E5" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J2_1" to="E4" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J2_2" to="E0" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":J2_3" to="E3" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J2_4" to="-E5" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J2_4" to="-E5" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J2_6" to="E4" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":J2_7" to="E4" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J2_8" to="E0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J2_8" to="E0" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J2_10" to="E3" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":J5_0" to="-E0" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J5_0" to="-E0" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J5_2" to="E1" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J5_3" to="-E0" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":J5_4" to="E1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J5_4" to="E1" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J7_0" to="-E1" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J7_1" to="E15" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J7_2" to="E19" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":J7_3" to="E7" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J7_4" to="-E1" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J7_4" to="-E1" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":J7_6" to="E15" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":J7_7" to="E19" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J7_8" to="E7" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J7_9" to="-E1" fromLane="0" toLane="1" dir="l" state="M"/>
+    <connection from=":J7_10" to="E15" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J7_11" to="E19" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J7_12" to="E7" fromLane="0" toLane="0" dir="l" state="M"/>
+
+</net>
